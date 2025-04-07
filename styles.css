@@ -138,6 +138,9 @@ button {
 .link--icon {
   color: var(--clr-fg);
   font-size: 1.2rem;
+  margin-top: auto;
+  align-self: flex-start; /* keeps the icon left-aligned */
+  transition: color 0.2s ease;
 }
 
 .btn {
@@ -288,12 +291,13 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
+
 }
 
 .project {
   padding: 2em;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
@@ -311,6 +315,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.2em 0;
+  margin-bottom: 1rem;
 }
 
 .project__stack-item {
