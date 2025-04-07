@@ -1,387 +1,329 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
     <title>Roshan - Devops</title>
+    <meta name="title" content="Roshan - Devops" />
+    <meta
+      name="description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="og:title" content="Portfolio Template - Open source" />
+    <meta
+      property="og:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="twitter:title" content="Portfolio Template - Open source" />
+    <meta
+      property="twitter:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="twitter:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://rookie2410.github.io/roshan.github.io/" class="link"
-          >RG.</a
-        >
-      </h3>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://github.com/rookie2410/roshan.github.io"
+              ><img src="./assets/logo.png" alt="Your Logo"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#">BlOG</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="https://github.com/rookie2410/roshan.github.io"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
       </nav>
-    </header>
 
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Roshan Gupta.</span></h1>
-        <h2 class="about__role">A Devops Engineer.</h2>
-        
-        <p class="about__desc">
-          Based in Mumbai, India, currently contributing my skills at FIS.
-          I love building scalable, automated systems using tools like AWS, Docker,Kubernetes, Terraform, Jenkins, and more. My focus is on leveraging cloud-native technologies to streamline development workflows and enhance deployment reliability.
-        </p>
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-image.png"
+          alt=""
+        />
+        <h1>Hi I'm <span class="about__name">Roshan Gupta.</span></h1>
+
+        <div class="content-text">
+          <h2>A Devops Enthusiast</h2>
+          <h2>Making containers run smoothly, Kubernetes scale effortlessly, Bridging Dev & Ops .</h2>
+          <br>
+          <p class="about__desc">
+            Based in Mumbai, India, currently contributing my skills at FIS. <br>I love building scalable, automated systems using tools like AWS, Docker,Kubernetes, Terraform, Jenkins, and more.
+          </p>
+        </div>
+
+        <br>
+        <br>
+        <a href="https://github.com/CommunityPro/portfolio-html" class="btn btn-secondary" target="_blank">Connect With Me</a>
+        <br>
 
         <div class="about__grid">
           <div class="about__box">
-            <a
-            href="https://www.linkedin.com/in/rookie2410/"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
+            <div class="about__icon-title">
+              <i class="fab fa-linkedin"></i>
+              <h3>
+                <a href="https://www.linkedin.com/in/rookie2410/" aria-label="LinkedIn Profile" class="link link--icon" target="_blank"            rel="noopener noreferrer">LinkedIn Profile</a>
+              </h3>
+            </div>
             <p>
-              On LinkedIn, I regularly share my projects and articles to document my learning journey—whether it's setting up a Kubernetes cluster from scratch, automating server provisioning with Terraform, or deploying serverless applications on AWS. I'm always exploring better ways to bridge the gap between dev and ops.
+              On LinkedIn, I regularly share my projects and articles to document my learning journey—
+              whether it's setting up a Kubernetes cluster from scratch, automating server provisioning
+              with Terraform, or deploying serverless applications on AWS. I'm always exploring better
+              ways to bridge the gap between dev and ops.
             </p>
           </div>
+          
           <div class="about__box">
-            <a
-            href="https://github.com/rookie2410"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
+            <div class="about__icon-title">
+              <i class="fab fa-github"></i>
+              <h3>
+              <a href="https://github.com/rookie2410" aria-label="GitHub Profile" class="link link--icon about__link-title" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+              </h3>
+            </div>
             <p>
               I use GitHub as my sandbox for experimenting with infrastructure as code, CI/CD pipelines,
-              and container orchestration. Most of my projects are designed to replicate real-world deployment scenarios, helping me sharpen both my problem-solving skills and infrastructure design capabilities.
+              and container orchestration. Most of my projects are designed to replicate real-world
+              deployment scenarios, helping me sharpen both my problem-solving skills and infrastructure
+              design capabilities.
             </p>
+          </div>
+          
+        </div>
+      </div>
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of my personal and paid projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project One</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
           </div>
         </div>
 
-        <div class="about__contact center">
-          <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Two</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Three</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Four</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Five</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Six</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <a href="#" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:communitypro47@gmail.com">communitypro47@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="#" target="_blank"
+            ><img src="./assets/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
+          /></a>
+        </div>
+        <!-- Attribution -->
+        <div class="attribution">
+          <a
+            href="https://github.com/CommunityPro/portfolio-html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
+              alt="attribution"
+              width="150px"
+            />
           </a>
         </div>
+        <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p>
       </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>AWS Service Tracker Script</h3>
-            <p class="project__description">
-              A CLI-based solution to automate AWS service monitoring and cost optimization. 
-              This bash script eliminates manual AWS console checks by providing:
-            </p>
-            <ul class="project__description">
-              <li>📊 Comprehensive list of all active AWS services</li>
-              <li>🔢 Instance count per service</li>
-              <li>💰 Identification of unused/resource-draining services</li>
-              <li>⏱️ Time-saving automated audits</li>
-            </ul>
-            <ul class="project__stack">
-              <li class="project__stack-item">Bash</li>
-              <li class="project__stack-item">AWS CLI</li>
-              <li class="project__stack-item">Shell Scripting</li>
-            </ul>
-            <img src="assets/aws_script.jpg" alt="LinkedIn post image" class="linkedin-image">
-            <div class="project__footer">
-            <a
-              href="https://github.com/rookie2410/Aws_Scripts"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="#"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>Complete AWS CI/CD Pipeline</h3>
-            <p class="project__description">
-              End-to-end automated deployment pipeline integrating:
-            </p>
-            <ul class="project__description">
-              <li>🚀 Jenkins for pipeline orchestration</li>
-              <li>🔍 SonarQube for code quality analysis</li>
-              <li>🐳 Docker for containerized deployments</li>
-              <li>⚡ GitHub webhooks for automatic triggers</li>
-            </ul>
-            <p class="project__description">
-              Implements complete workflow from code commit to production deployment with quality gates.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">AWS</li>
-              <li class="project__stack-item">Jenkins</li>
-              <li class="project__stack-item">Docker</li>
-              <li class="project__stack-item">SonarQube</li>
-            </ul>
-            <img src="assets/CI-CD.jpg" alt="LinkedIn post image" class="linkedin-image">
-            <div class="project__footer">
-            <a
-              href="#"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>Terraform Learning Journey</h3>
-            <p class="project__description">
-              Daily progress in mastering Infrastructure as Code through practical projects:
-            </p>
-            <ul class="project__description">
-              <li>📚 <strong>Basic</strong>: Static websites, VMs, remote state backends</li>
-              <li>📈 <strong>Intermediate</strong>: LAMP stacks, Kubernetes clusters, CI/CD integration</li>
-              <li>🚀 <strong>Advanced</strong>: Multi-region DR, compliance automation, auto-scaling setups</li>
-            </ul>
-            <p class="project__description">
-              Continuous learning through hands-on implementation and community collaboration.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Terraform</li>
-              <li class="project__stack-item">AWS</li>
-              <li class="project__stack-item">CI/CD</li>
-            </ul>
-            <img src="assets/tf.jpg" alt="LinkedIn post image" class="linkedin-image">
-            <div class="project__footer">
-            <a
-              href="https://github.com/rookie2410/Terraform-Basics"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>AWS Production-Grade VPC Architecture</h3>
-              <p class="project__description">
-                Designed and implemented a secure, enterprise-ready cloud infrastructure demonstrating core AWS networking concepts:
-              </p>
-            <ul class="project__description">
-              <li>🎯 Public subnets for web-facing resources</li>
-              <li>🔒 Private subnets for database/application layers</li>
-              <li>🛡️ Security groups with least-privilege access</li>
-            </ul>
-            <li><strong>Load Balancing:</strong> Configured Application Load Balancer</li>
-            <li><strong>Auto Scaling:</strong> Created dynamic scaling policies</li>
-            <li><strong>Auto Scaling:</strong> Created dynamic scaling policies</li>
-            <ul class="project__stack">
-              <li class="project__stack-item">AWS VPC</li>
-              <li class="project__stack-item">EC2 Auto Scaling</li>
-              <li class="project__stack-item">ALB</li>
-              <li class="project__stack-item">Route 53</li>
-            </ul>
-            <img src="assets/vpc.jpg" alt="LinkedIn post image" class="linkedin-image">
-            <div class="project__footer">
-            <a
-              href="https://github.com/rookie2410/Aws_Scripts"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="#"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>Complete AWS CI/CD Pipeline</h3>
-            <p class="project__description">
-              End-to-end automated deployment pipeline integrating:
-            </p>
-            <ul class="project__description">
-              <li>🚀 Jenkins for pipeline orchestration</li>
-              <li>🔍 SonarQube for code quality analysis</li>
-              <li>🐳 Docker for containerized deployments</li>
-              <li>⚡ GitHub webhooks for automatic triggers</li>
-            </ul>
-            <p class="project__description">
-              Implements complete workflow from code commit to production deployment with quality gates.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">AWS</li>
-              <li class="project__stack-item">Jenkins</li>
-              <li class="project__stack-item">Docker</li>
-              <li class="project__stack-item">SonarQube</li>
-            </ul>
-            <img src="assets/vpc.jpg" alt="LinkedIn post image" class="linkedin-image">
-            <div class="project__footer">
-            <a
-              href="#"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>Terraform Learning Journey</h3>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7278796605099560960?collapsed=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-            <div class="project__footer">
-            <a
-              href="https://github.com/rookie2410/Terraform-Basics"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">AWS</li>
-          <li class="skills__list-item btn btn--plain">Docker</li>
-          <li class="skills__list-item btn btn--plain">Kubernetes</li>
-          <li class="skills__list-item btn btn--plain">Terraform</li>
-          <li class="skills__list-item btn btn--plain">Jenkins</li>
-          <li class="skills__list-item btn btn--plain">Ansible</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:rjshekhar.official@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a
-        href="https://github.com/rookie2410/roshan.github.io"
-        class="link footer__link"
-      >
-        Created By Roshan Gupta
-      </a>
     </footer>
-
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </div>
-
-    <style>
-      .about__grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-        margin-top: 2rem;
-      }
-
-      .about__box {
-        background-color: var(--clr-bg-alt);
-        padding: 1.5rem;
-        border-radius: 10px;
-        max-width: 500px;
-        flex: 1;
-        min-width: 300px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 0.6s ease-out;
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      .link {
-        transition: color 0.3s ease;
-      }
-
-      .link:hover {
-        color: var(--clr-primary);
-      }
-
-      @media (max-width: 768px) {
-        .about__grid {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .about__box {
-          width: 90%;
-          min-width: unset;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .about__desc {
-          font-size: 0.9rem;
-        }
-
-        .about__box {
-          padding: 1rem;
-        }
-      }
-    </style>
-    <script src="./script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
