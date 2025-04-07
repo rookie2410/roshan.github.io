@@ -300,6 +300,32 @@ main {
   text-align: left;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.project__footer {
+  margin-top: auto;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--clr-bg-alt);
+}
+
+.project__footer .fa-external-link-alt {
+  font-size: 1.4rem;
+  color: var(--clr-primary);
+  vertical-align: middle;
+} 
+
+.project__footer .link--icon {
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  transition: transform 0.2s ease;
+}
+
+.project__footer .link--icon:hover {
+  transform: translateY(-2px);
 }
 
 .project:hover {
@@ -416,4 +442,12 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+
+.linkedin-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
