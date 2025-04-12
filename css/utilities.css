@@ -162,7 +162,7 @@ h2::selection {
 
 /* Project 5 */
 .card:nth-child(5) {
-  background: url(../assets/project/project-1.png) center center/contain no-repeat;
+  background: url(../assets/project/k8s.png) center center/contain no-repeat;
 }
 
 /* Project 6 */
