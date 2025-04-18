@@ -43,6 +43,7 @@
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
 
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -169,6 +170,46 @@ body {
   flex-direction: column;
   margin: 2rem auto 5rem;
 }
+
+.project-description {
+  margin-top: 160px;
+  background: #ffffff; /* 👈 now fully opaque */
+  padding: 1rem 1.2rem;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+  color: var(--text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-description h3 {
+  font-size: 1.1rem;
+  font-weight: var(--weight-semibold);
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+
+.project-description p {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0;
+}
+
+.card:hover .project-description {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode */
+[data-theme="dark"] .project-description {
+  background: #141414;
+  color: var(--text-color-two);
+}
+
+[data-theme="dark"] .project-description p {
+  color: #ccc;
+}
+
 
 #projects .btn {
   align-self: center;
