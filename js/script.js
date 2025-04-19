@@ -65,3 +65,16 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  if ('ontouchstart' in window) {
+    document.querySelectorAll('.image-container').forEach(container => {
+      let isTapped = false;
+      container.addEventListener('click', () => {
+        isTapped = !isTapped;
+        container.classList.toggle('active', isTapped);
+      });
+    });
+  }
+});
